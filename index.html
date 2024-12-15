@@ -81,6 +81,13 @@
         <pre id="code-block-1">토스뱅크 190888059285 ㅇㄱㅅ (입금한 뒤 보낸 이름이나 초성 알려주세요)</pre>
     </div>
     <script>
+        const password = prompt("비밀번호를 입력하세요:");
+        if (password === '11211') {
+            document.getElementById('content').style.display = 'block';
+        } else {
+            alert('잘못된 비밀번호입니다.');
+            document.location.href = ''
+        }d
         function copyCode(codeBlockId) {
             const codeBlock = document.getElementById(codeBlockId);
             const range = document.createRange();
