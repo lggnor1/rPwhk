@@ -85,6 +85,12 @@
         <button class="copy-button" onclick="copyCode('code-block-2')">copy</button>
         <pre id="code-block-2">토스뱅크 190888059285 ㅇㄱㅅ</pre>
     </div>
+
+    <div class="code-container">
+        <button class="copy-button" onclick="copyCode('code-block-3')">copy</button>
+        <pre id="code-block-3">팀위치: 1500원 이상, 스파들고 던지기: 1000원 이상, 총: 500원 이상, 팀킬(방해): 1500원 이상 팀이 돈주면 안던짐(반대로 상대가 돈주면 던짐)(시작 가격: 1000원 이상, 50원 단위)(사실상 경매)</pre>
+    </div>
+
     <script>
         const password = prompt("비밀번호를 입력하세요:");
         if (password === '11211') {
@@ -92,7 +98,7 @@
         } else {
             alert('잘못된 비밀번호입니다.');
             document.location.href = ''
-        }d
+        }
         function copyCode(codeBlockId) {
             const codeBlock = document.getElementById(codeBlockId);
             const range = document.createRange();
